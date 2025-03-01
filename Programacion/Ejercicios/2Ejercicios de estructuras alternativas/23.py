@@ -12,8 +12,3 @@ elif abs(pnumero - numeros[3] == 1):
     print(f"El número más cercano al 2 es el {numeros[3]}")
 elif abs(pnumero - numeros[4] == 1):
     print(f"El número más cercano al 2 es el {numeros[4]}")
-    
-print(f"El número más cercano al 2 es el {numeros[1]}")
-print(f"El número más cercano al 2 es el {numeros[2]}")
-print(f"El número más cercano al 2 es el {numeros[3]}")
-print(f"El número más cercano al 2 es el {numeros[4]}")
