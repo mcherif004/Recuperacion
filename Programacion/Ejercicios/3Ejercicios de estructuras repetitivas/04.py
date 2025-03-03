@@ -1,10 +1,10 @@
 # Crea un programa que pida al usuario dos números y muestre su división si el segundo no es cero, o un mensaje de aviso en caso contrario.
 
-divisor = float(input("Introduce el divisor: "))
-dividiendo = float(input("Introduce el dividiendo: "))
+num1 = int(input("Introduce un numero: "))
+num2 = int(input("Introduce un numero: "))
 
-if (dividiendo > 0):
-    division = divisor / dividiendo
-    print(f"La division de {divisor} entre {dividiendo} es de {division}")
+if num2 != 0:
+    division = num1 / num2
+    print(f"La division de {num1} entre {num2} es {division}")
 else:
-    print("No se puede dividir entre 0")
+    print("Error el divisor no puede ser 0")

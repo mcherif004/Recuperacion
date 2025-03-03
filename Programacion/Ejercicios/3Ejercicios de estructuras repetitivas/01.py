@@ -7,3 +7,17 @@ import random
 rnum = random.randint(1,100)
 intentos = 10
 
+while intentos > 0:
+    intento = int(input("Adivina el numero: "))
+    if intento == rnum:
+        print(f"Has ganado!")
+        break
+    elif intento > rnum:
+        intentos -= 1
+        print(f"El numero {intento} es mayor al numero\nTe quedan {intentos} intentos")
+    elif intento < rnum:
+        intentos -= 1
+        print(f"El numero {intento} es menor al numero\nTe quedan {intentos} intentos")
+
+if intentos == 0:
+    print(f"Has perdido el numero era: {rnum}")

@@ -1,8 +1,14 @@
-# Escribe un programa que lea un número e indique si es par o impar.
+# Algoritmo que pida caracteres e imprima ‘VOCAL’ si son vocales y ‘NO VOCAL’ en caso contrario, el programa termina cuando se introduce un espacio.
 
-numero = float(input("Introduce el numero que quieres comprobar"))
-
-if (numero % 2 == 0):
-    print(" El numero es par")
-else:
-    print(" El numero es impar")
+while True:
+    caracter = input("Introduce un caracter: ")
+    vocales = ["a","e","i","o","u"]
+    if caracter == " ":
+        print("Hasta la proxima!")
+        break
+    elif caracter in vocales:
+        print("VOCAL")
+    elif caracter.isalpha() and caracter not in vocales:
+        print("NO VOCAL")
+    else:
+        print("Error inesperado")

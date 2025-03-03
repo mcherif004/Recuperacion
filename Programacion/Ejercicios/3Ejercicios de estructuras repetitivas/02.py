@@ -1,22 +1,19 @@
-# Realiza el ejercicio 56 (página 100) del libro "Introducción a la Programación con Python 3".
+# Realizar un algoritmo que pida números (se pedirá por teclado la cantidad de números a introducir). El programa debe informar de cuantos números introducidos son mayores que 0, menores que 0 e iguales a 0.
 
-# 56.Indica qué líneas del último programa (y en qué orden) se ejecutarán para cada unode los siguientes casos:
+cantidad = int(input("Introduce la cantidad de números a introducir: "))
 
-print('Programa para la resolución de la ecuación a·x + b = 0.')
+mayores = 0
+menores = 0
+iguales = 0
 
-a = float(input('Valor de a: '))
-b = float(input('Valor de b: '))
+while cantidad > 0:
+    numeros = int(input("Introduce los numeros: "))
+    cantidad -= 1
+    if numeros > 0:
+        mayores += 1
+    elif numeros < 0:
+        menores += 1
+    elif numeros == 0:
+        iguales += 1
 
-if a != 0:
-    x = -b / a
-    print('Solución:', x)
-else:
-    if b != 0:
-        print('La ecuación no tiene solución.')
-    if b == 0:
-        print('La ecuación tiene infinitas soluciones.')
-
-# 1) a = 2 y b = 6. Solucion: -3.0
-# 2) a = 0 y b = 3. Solucion: La ecuacion no tiene solucion
-# 3) a = 0 y b = −3. Solucion: La ecuacion no tiene solucion
-# 4) a = 0 y b = 0. Solucion: La ecuación tiene infinitas soluciones.
+print(f"Hay {mayores} numeros mayores que 0\nHay {menores} numeros menores que 0\nHay {iguales} numeros iguales a 0")
