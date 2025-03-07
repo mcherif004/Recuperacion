@@ -1,10 +1,8 @@
-# Crea un programa que pida al usuario dos números y muestre su división si el segundo no es cero, o un mensaje de aviso en caso contrario.
+# Escribir un programa que imprima todos los números pares entre dos números que se le pidan al usuario.
 
-num1 = int(input("Introduce un numero: "))
-num2 = int(input("Introduce un numero: "))
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
 
-if num2 != 0:
-    division = num1 / num2
-    print(f"La division de {num1} entre {num2} es {division}")
-else:
-    print("Error el divisor no puede ser 0")
+for num in range(num1+1,num2): #Range no incluye el segundo numero, y le añado +1 para que no añada el primero
+    if num % 2 == 0:
+        print(num)
