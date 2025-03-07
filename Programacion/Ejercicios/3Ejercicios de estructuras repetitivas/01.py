@@ -5,6 +5,7 @@
 import random
 
 rnum = random.randint(1,100)
+
 intentos = 10
 
 while intentos > 0:
