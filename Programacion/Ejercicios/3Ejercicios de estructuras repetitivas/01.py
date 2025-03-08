@@ -15,10 +15,10 @@ while intentos > 0:
         break
     elif intento > rnum:
         intentos -= 1
-        print(f"El numero {intento} es mayor al numero\nTe quedan {intentos} intentos")
+        print(f"El numero {intento} es mayor al numero que tienes que adivinar\nTe quedan {intentos} intentos")
     elif intento < rnum:
         intentos -= 1
-        print(f"El numero {intento} es menor al numero\nTe quedan {intentos} intentos")
+        print(f"El numero {intento} es menor al numero que tienes que adivinar\nTe quedan {intentos} intentos")
 
 if intentos == 0:
     print(f"Has perdido el numero era: {rnum}")
