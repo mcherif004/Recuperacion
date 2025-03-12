@@ -4,7 +4,9 @@
 
 import random
 
-rnum = random.randint(1,100)
+#rnum = random.randint(1,100)
+
+rnum = 5
 intentos = 10
 
 while intentos > 0:
@@ -14,10 +16,10 @@ while intentos > 0:
         break
     elif intento > rnum:
         intentos -= 1
-        print(f"El numero {intento} es mayor al numero\nTe quedan {intentos} intentos")
+        print(f"El numero que tienes que adivinar es menor al numero {intento}\nTe quedan {intentos} intentos")
     elif intento < rnum:
         intentos -= 1
-        print(f"El numero {intento} es menor al numero\nTe quedan {intentos} intentos")
+        print(f"El numero que tienes que adivinar es mayor al numero {intento}\nTe quedan {intentos} intentos")
 
 if intentos == 0:
     print(f"Has perdido el numero era: {rnum}")
