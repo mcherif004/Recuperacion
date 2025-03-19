@@ -19,7 +19,7 @@ def opciones():
                 print(f"La resta de {a} y {b} es {resta}")
 
             def multiplicacion():
-                multiplicacion = a + b
+                multiplicacion = a * b
                 print(f"La multiplicacion de {a} y {b} es {multiplicacion}")
 
             def division():

@@ -8,7 +8,7 @@ Muestra el máximo y mínimo de 1000 números enteros aleatorios entre 1 y 50000
 Muestra la varianza de 10 números enteros aleatorios entre 1 y 5."""
 
 import random
-# from 04.py import maximum, minimum, mean, variance, median, mode
+# from 03.py import maximum, minimum, mean, variance, median, mode
 
 def es_primo(n):
     if n < 2:
