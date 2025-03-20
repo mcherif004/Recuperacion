@@ -13,7 +13,6 @@ lista_numeros_fuera = []
 limite_inferior = limite_superior = None
 numero_limite_ingresado = False
 
-# Pedir límites correctamente
 while True:
     limite_inferior = int(input("Introduce el límite inferior: "))
     limite_superior = int(input("Introduce el límite superior: "))

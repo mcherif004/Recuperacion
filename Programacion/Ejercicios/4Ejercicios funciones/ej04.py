@@ -1,11 +1,14 @@
-"""Crea una función que reciba un número, lo convierta al sistema de palotes y lo devuelva en una cadena de caracteres. 
+"""Haz un programa que muestre un menú y, usando las funciones anteriores, ejecute las siguientes opciones:
 
-Por ejemplo, el 470213 en decimal es el | | | | - | | | | | | | - - | | - | - | | | en el sistema de palotes. 
-
-Utiliza esta función en un programa para comprobar que funciona bien. Desde la función no se debe mostrar nada por pantalla, solo se debe usar print desde el programa principal."""
+Muestra los números primos que hay entre 1 y 1000.
+Muestra los números capicúa que hay entre 1 y 99999.
+Muestra la moda de 50 números enteros aleatorios entre 1 y 10.
+Muestra la mediana de 10 números enteros aleatorios entre 1 y 50.
+Muestra el máximo y mínimo de 1000 números enteros aleatorios entre 1 y 50000.
+Muestra la varianza de 10 números enteros aleatorios entre 1 y 5."""
 
 import random
-# from 04.py import maximum, minimum, mean, variance, median, mode
+from ej03 import maximum, minimum, mean, variance, median, mode
 
 def es_primo(n):
     if n < 2:
@@ -26,9 +29,6 @@ def voltea(n):
 def es_capicua(n):
     return n == voltea(n)
 
-def convertir_a_palotes(n):
-    return ' - '.join('|' * int(digito) for digito in str(n))
-
 def mostrar_menu():
     print("\nMenú de opciones:")
     print("1. Mostrar números primos entre 1 y 1000")
@@ -37,8 +37,7 @@ def mostrar_menu():
     print("4. Mostrar mediana de 10 números aleatorios entre 1 y 50")
     print("5. Mostrar máximo y mínimo de 1000 números aleatorios entre 1 y 50000")
     print("6. Mostrar varianza de 10 números aleatorios entre 1 y 5")
-    print("7. Convertir número al sistema de palotes")
-    print("8. Salir")
+    print("7. Salir")
 
 def ejecutar_opcion(opcion):
     if opcion == 1:
@@ -61,9 +60,6 @@ def ejecutar_opcion(opcion):
         datos = [random.randint(1, 5) for _ in range(10)]
         print("Varianza de los números:", variance(datos))
     elif opcion == 7:
-        numero = int(input("Introduce un número para convertir al sistema de palotes: "))
-        print("Sistema de palotes:", convertir_a_palotes(numero))
-    elif opcion == 8:
         print("Saliendo...")
         exit()
     else:

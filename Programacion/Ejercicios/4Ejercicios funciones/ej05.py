@@ -1,13 +1,11 @@
-"""Crea una función que reciba un número, lo convierta al sistema Morse y lo devuelve en una cadena de caracteres. 
+"""Crea una función que reciba un número, lo convierta al sistema de palotes y lo devuelva en una cadena de caracteres. 
 
-Por ejemplo, el 213 es el ..___ .____ ...__ en Morse. Utiliza esta función en un programa para comprobar que funciona bien.
+Por ejemplo, el 470213 en decimal es el | | | | - | | | | | | | - - | | - | - | | | en el sistema de palotes. 
 
-Desde la función no se debe mostrar nada por pantalla, solo se debe usar print desde el programa principal.
-
-Los números en Morse los puedes encontrar aquí."""
+Utiliza esta función en un programa para comprobar que funciona bien. Desde la función no se debe mostrar nada por pantalla, solo se debe usar print desde el programa principal."""
 
 import random
-# from 04.py import maximum, minimum, mean, variance, median, mode
+from ej03 import maximum, minimum, mean, variance, median, mode
 
 def es_primo(n):
     if n < 2:
@@ -31,13 +29,6 @@ def es_capicua(n):
 def convertir_a_palotes(n):
     return ' - '.join('|' * int(digito) for digito in str(n))
 
-def convertir_a_morse(n):
-    morse_dict = {
-        '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-',
-        '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.'
-    }
-    return ' '.join(morse_dict[d] for d in str(n))
-
 def mostrar_menu():
     print("\nMenú de opciones:")
     print("1. Mostrar números primos entre 1 y 1000")
@@ -47,8 +38,7 @@ def mostrar_menu():
     print("5. Mostrar máximo y mínimo de 1000 números aleatorios entre 1 y 50000")
     print("6. Mostrar varianza de 10 números aleatorios entre 1 y 5")
     print("7. Convertir número al sistema de palotes")
-    print("8. Convertir número al sistema Morse")
-    print("9. Salir")
+    print("8. Salir")
 
 def ejecutar_opcion(opcion):
     if opcion == 1:
@@ -74,9 +64,6 @@ def ejecutar_opcion(opcion):
         numero = int(input("Introduce un número para convertir al sistema de palotes: "))
         print("Sistema de palotes:", convertir_a_palotes(numero))
     elif opcion == 8:
-        numero = int(input("Introduce un número para convertir al sistema Morse: "))
-        print("Sistema Morse:", convertir_a_morse(numero))
-    elif opcion == 9:
         print("Saliendo...")
         exit()
     else:

@@ -1,4 +1,5 @@
-"""Crea una biblioteca de funciones (statistics) dentro de un paquete (util) que contenga las siguientes funciones:
+"""
+Crea una biblioteca de funciones (statistics) dentro de un paquete (util) que contenga las siguientes funciones:
 
 maximum
 recibiendo como parámetro un array de enteros
@@ -18,7 +19,8 @@ recibiendo un conjunto de parámetros enteros
 mode
 recibiendo como parámetro un array de enteros 
 recibiendo un conjunto de parámetros enteros
-devuelve un array de enteros (puede haber varias modas)"""
+devuelve un array de enteros (puede haber varias modas)
+"""
 
 def maximum(*args):
     numbers = args[0] if len(args) == 1 and isinstance(args[0], list) else args

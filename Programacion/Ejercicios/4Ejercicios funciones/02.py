@@ -1,4 +1,5 @@
-"""Crea una biblioteca de funciones numéricas que contenga las siguientes funciones. Recuerda que puedes usar unas dentro de otras si es necesario.
+"""
+Crea una biblioteca de funciones numéricas que contenga las siguientes funciones. Recuerda que puedes usar unas dentro de otras si es necesario.
 
 Observa bien lo que hace cada función ya que, si las implementas en el orden adecuado, te puedes ahorrar mucho trabajo. Por ejemplo, la función es_capicua() resulta trivial teniendo voltea() y la función siguiente_primo() también es muy fácil de implementar teniendo es_primo().
 
@@ -17,7 +18,8 @@ pega_por_detras: añade un dígito a un número por detrás.
 pega_por_delante: añade un dígito a un número por delante.
 trozoDeNumero: toma como parámetros las posiciones inicial y final dentro de un número y devuelve el trozo correspondiente.
 juntaNumeros: pega dos números para formar uno.
-Haz el programa de manera que al ejecutarse pruebe cada una de las funciones."""
+Haz el programa de manera que al ejecutarse pruebe cada una de las funciones.
+"""
 
 def es_primo(n):
     if n < 2:
