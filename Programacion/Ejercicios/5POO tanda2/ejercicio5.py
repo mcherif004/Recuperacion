@@ -5,8 +5,9 @@
 Crear la pila o la cola con o sin valores iniciales o a partir de otra cola o pila.
 Obtener el número de elementos almacenados (tamaño).
 Saber si la pila o la cola está vacía.
-Vaciar completamente la pila o la cola.
-Para el caso de la pila:
+Vaciar completamente la pila o la cola."""
+
+"""Para el caso de la pila:
 Apilar (push): se añade un elemento a la pila. Se añade al principio de esta.
 Desapilar (pop): se saca (debe devolverse) un elemento de la pila y se elimina. 
 Leer el elemento superior de la pila sin retirarlo (top).
