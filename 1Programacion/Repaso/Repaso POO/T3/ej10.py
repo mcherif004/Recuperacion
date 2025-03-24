@@ -13,8 +13,9 @@ Para simplificar, cada kilómetro recorrido consumirá 0,1 litros de combustible
 Prueba las clases creadas mediante un programa con un menú (usando la clase de la tanda anterior) como el que se muestra a continuación:
 """
 
+from abc import ABC, abstractmethod
+
+# Funcion Menu
 def Menu():
     print("VEHÍCULOS\n=========\n1. Anda con la bicicleta.\n2. Haz el caballito con la bicicleta.\n3. Anda con el coche.\n4. Quema rueda con el coche.\n5. Llena el depósito del coche.\n6. Ver kilometraje de la bicicleta.\n7. Ver kilometraje del coche.\n8. Ver el combustible que queda en el depósito del coche.\n9. Ver kilometraje total.\n10. Salir.\n")
     opcion = int(input("Elige una opción (1-8): "))
-
-Menu()

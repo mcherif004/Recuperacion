@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+
 """ Una empresa de alquiler de vehículos quiere gestionar mediante programa informático sus recursos, para ello sabemos lo siguiente de la empresa.
 
 De cada vehículo se almacenan los siguientes datos: id (un numero entero único que identifica al vehículo de cara a la empresa), marca, modelo, bastidor (letras y números), color, matrícula y cliente que lo tiene alquilado (del cliente se contemplarán los datos: nombre, apellido1 , apellido2, dni).
@@ -22,3 +24,7 @@ El programa debe permitir: comprar vehículos (que pasarán a estar en la “lis
 
 Por último la empresa quiere obtener los siguientes listados: de todos los vehículos (incluyendo su precio de alquiler por día), solo de aquellos que tiene en alquiler, de clientes con los vehículos que tiene cada uno alquilado y el coste total el alquiler.
 """
+
+# Empresa de alquiler de vehiculos
+
+class 
