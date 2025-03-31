@@ -8,20 +8,16 @@ en rojo.
 date_default_timezone_set('CET');
 
 // Variables: dia, mes y año
-$day = date('l'); // Dia
-$daysInMonth = date('j'); // Dias del mes
-$month = date('n'); // Mes
-$year = date('Y'); // Año
-$firstday = date('w', strtotime("$year-$month-01")); // Numero del primer dia
-
-$dm = 1; // Inicializamos el contador de días en 1
-
-//! echo ("Primer dia:". $firstday ."Dia de hoy:" . $day . "Dias del mes:" . $daysInMonth . "Mes:" . $month . "Año:" . $year);
-
+$day_today = date('j'); // Día actual
+$month = date('n'); // Mes actual
+$year = date('Y'); // Año actual
+$daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year); // Total de días en el mes
+$firstday = date('w', strtotime("$year-$month-01")); // Primer día del mes (0 = Domingo, 1 = Lunes, ...)
+$firstday = ($firstday == 0) ? 6 : $firstday - 1; // Ajuste para que empiece en Lunes
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +30,8 @@ $dm = 1; // Inicializamos el contador de días en 1
             border: 2px solid black;
         }
         th, td {
-            height: 100px;
-            width: 120px;
+            height: 50px;
+            width: 100px;
             text-align: center;
             border: 1px solid black;
         }
@@ -50,45 +46,51 @@ $dm = 1; // Inicializamos el contador de días en 1
     </style>
 </head>
 <body>
-    <!-- Creamos la tabla con formato de calendario -->
-
-    <!-- Crear una tabla con los dias maximos del mes -->
+    <h2 style="text-align: center;">Calendario de <?php echo date('F Y'); ?></h2>
     <table>
         <tr>
             <th>Lun</th>
             <th>Mar</th>
-            <th>Mie</th>
+            <th>Mié</th>
             <th>Jue</th>
             <th>Vie</th>
-            <th>Sab</th>
+            <th>Sáb</th>
             <th>Dom</th>
         </tr>
         <tr>
         <?php
             $currentDay = 0;
 
-            // Rellenar los días en blanco antes del primer día del mes
+            // Espacios vacíos hasta el primer día del mes
             for ($i = 0; $i < $firstday; $i++) {
                 echo '<td></td>';
                 $currentDay++;
             }
 
-            // Rellenar los días del mes
+            // Rellenar días del mes
             for ($i = 1; $i <= $daysInMonth; $i++) {
                 $class = '';
-                if ($i == $day) {
+
+                // Verificar si es el día actual
+                if ($i == $day_today) {
                     $class = 'dia-actual';
                 }
 
-                echo '<td class="' . $class . '">' . $i . '</td>';
+                // Verificar si es festivo
+                if (date('w', strtotime("$year-$month-$i")) == 0) {
+                    $class = 'festivo';
+                }
+
+                echo "<td class='$class'>$i</td>";
                 $currentDay++;
 
+                // Salto de línea después de cada semana
                 if ($currentDay % 7 == 0) {
                     echo '</tr><tr>';
                 }
             }
 
-            // Rellenar los días en blanco al final del mes
+            // Rellenar espacios vacíos al final del mes
             while ($currentDay % 7 != 0) {
                 echo '<td></td>';
                 $currentDay++;
