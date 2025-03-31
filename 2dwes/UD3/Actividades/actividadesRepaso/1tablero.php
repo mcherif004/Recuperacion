@@ -80,7 +80,7 @@
         <?php for ($fila = 8; $fila >= 1; $fila--): ?>
             <tr>
                 <th class="sin-bordes"><?php echo $fila; ?></th>
-                <?php for ($columna = 0; $columna < $columnas; $columna++): 
+                <?php for ($columna = 0; $columna < $columnas; $columna++):
                     $color = ($fila + $columna) % 2 == 0 ? 'white' : 'black';
                     $coord = $letras[$columna] . $fila;
                 ?>
