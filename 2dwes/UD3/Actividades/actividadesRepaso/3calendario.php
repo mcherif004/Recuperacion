@@ -1,16 +1,21 @@
 <?php
-/* 
-5. Dado el mes y año almacenados en variables, escribir un programa que muestre el 
-calendario mensual correspondiente. Marcar el día actual en verde y los festivos 
-en rojo.
-*/
-
+setlocale(LC_TIME, 'es_ES.UTF-8');
 date_default_timezone_set('CET');
 
-// Variables: dia, mes y año
+// Si se envía una fecha, la usamos; si no, usamos la fecha actual
+if (isset($_POST['fecha']) && !empty($_POST['fecha'])) {
+    $fecha = $_POST['fecha'];
+    $fecha_seleccionada = strtotime($fecha);
+    $month = date('n', $fecha_seleccionada);
+    $year = date('Y', $fecha_seleccionada);
+} else {
+    $month = date('n');
+    $year = date('Y');
+}
+
 $day_today = date('j'); // Día actual
-$month = date('n'); // Mes actual
-$year = date('Y'); // Año actual
+$month_actual = date('n'); // Mes actual (del sistema)
+$year_actual = date('Y');  // Año actual (del sistema)
 
 $daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year); // Total de días en el mes
 $firstday = date('w', strtotime("$year-$month-01")); // Primer día del mes
@@ -47,7 +52,14 @@ $firstday = ($firstday == 0) ? 6 : $firstday - 1; // Ajuste para que empiece en 
     </style>
 </head>
 <body>
-    <h2 style="text-align: center;">Calendario de <?php echo date('F Y'); ?></h2>
+    <h2 style="text-align: center;">Calendario</h2>
+    
+    <form method="post" style="text-align: center;">
+        <label for="fecha">Selecciona una fecha:</label>
+        <input type="date" name="fecha" id="fecha">
+        <button type="submit">Mostrar calendario</button>
+    </form>
+
     <table>
         <tr>
             <th>Lun</th>
@@ -72,10 +84,10 @@ $firstday = ($firstday == 0) ? 6 : $firstday - 1; // Ajuste para que empiece en 
             for ($i = 1; $i <= $daysInMonth; $i++) {
                 $class = '';
 
-                // Verificar si es el día actual
-                if ($i == $day_today) {
+                // Verificar si es el día actual //!Fixed
+                if ($year == $year_actual && $month == $month_actual && $i == $day_today) {
                     $class = 'dia-actual';
-                }
+                }                
 
                 // Verificar si es festivo
                 if (date('w', strtotime("$year-$month-$i")) == 0) {
