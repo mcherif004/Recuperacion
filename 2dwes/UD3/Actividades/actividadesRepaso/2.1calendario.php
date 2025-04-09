@@ -52,7 +52,7 @@ $firstday = ($firstday == 0) ? 6 : $firstday - 1; // Ajuste para que empiece en 
     </style>
 </head>
 <body>
-    <h2 style="text-align: center;">Calendario</h2>
+    <h2 style="text-align: center;">Calendario de <?php echo date('F Y'); ?></h2>
     
     <form method="post" style="text-align: center;">
         <label for="fecha">Selecciona una fecha:</label>

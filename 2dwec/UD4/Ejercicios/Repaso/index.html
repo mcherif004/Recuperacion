@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:,">
+  <title>Registro Examen</title>
+  <script src="index.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .error {
+      border: 2px solid red;
+      background-color: #ffe6e6;
+    }
+
+    .mensaje-error {
+      color: red;
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    #mensajeGeneral {
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form id="formExamen" novalidate>
+    <h1>Registro al Examen</h1>
+
+    <label for="nombre">Nombre del Alumno:</label>
+    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]{2,50}">
+    <div class="mensaje-error" id="errorNombre"></div>
+
+    <label for="email">Correo Institucional:</label>
+    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@instituto\.edu">
+    <div class="mensaje-error" id="errorEmail"></div>
+
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" required pattern="\d{8}[A-Za-z]">
+    <div class="mensaje-error" id="errorDNI"></div>
+
+    <label for="fecha">Fecha del Examen:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <div class="mensaje-error" id="errorFecha"></div>
+
+    <label for="hora">Hora del Examen:</label>
+    <input type="time" id="hora" name="hora" required>
+    <div class="mensaje-error" id="errorHora"></div>
+
+    <label for="asignatura">Asignatura:</label>
+    <input type="text" id="asignatura" name="asignatura" required minlength="3">
+    <div class="mensaje-error" id="errorAsignatura"></div>
+
+    <label for="comentarios">Comentarios (opcional):</label>
+    <textarea id="comentarios" name="comentarios" maxlength="250"></textarea>
+
+    <div id="mensajeGeneral"></div>
+    <div style="display: flex; gap: 10px;">
+    <button type="submit">Enviar</button>
+    <button type="button" id="btnLimpiar">Limpiar</button>
+</div>
+  </form>
+</body>
+</html>
