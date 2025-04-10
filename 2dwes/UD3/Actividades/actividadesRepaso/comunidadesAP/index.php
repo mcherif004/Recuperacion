@@ -33,9 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $correcta = $provincias[$provincia];
 
     if ($respuesta === $correcta) {
-        $mensaje = "<p style='color:green;'>Correcto. $provincia pertenece a $correcta.</p>";
+        $mensaje = "<p class='correcto'>Correcto. $provincia pertenece a $correcta.</p>";
     } else {
-        $mensaje = "<p style='color:red;'>Incorrecto. $provincia pertenece a $correcta.</p>";
+        $mensaje = "<p class='error'>Incorrecto. $provincia pertenece a $correcta.</p>";
     }
 }
 
@@ -48,6 +48,72 @@ $provinciaAleatoria = array_rand($provincias);
 <head>
     <meta charset="UTF-8">
     <title>Comunidades Autónomas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .mensaje {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .correcto {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h2>Selecciona la comunidad autónoma correspondiente</h2>
