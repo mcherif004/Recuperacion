@@ -1,0 +1,14 @@
+Queremos ir al cine con nuestras amistades, pero no queremos ir a ver cualquier película, para ello queremos información antes de decidir qué vamos a ver. Esta información la vamos a sacar de un servicio web, en concreto de TMDB. Nuestro programa tendrá un menú (usando la clase diseñada para este fin) con las siguientes opciones:
+
+Buscar código de película según su nombre.
+Buscar información de película según su código. Entre los datos de la información debe estar:
+Título.
+Géneros.
+Argumento.
+Duración.
+...
+Y enlace a su web en IMDB.
+Películas a recomendar si nos gusta una película concreta.
+Queremos obtener las 5 películas "trending topic" semanal o del día en función del género de la misma. Al usuario le preguntamos si quiere un género concreto o si los quiere todos.
+Mostrar géneros disponibles. 
+La clave de la API no puede estar en el programa, tiene que ser una variable de entorno del sistema.

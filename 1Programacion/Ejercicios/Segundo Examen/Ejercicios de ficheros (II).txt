@@ -1,0 +1,23 @@
+1. Realiza un programa que sea capaz de ordenar alfabéticamente las palabras contenidas en un fichero de texto. El nombre del fichero que contiene las palabras se debe pasar como argumento en la línea de comandos. El nombre del fichero resultado debe ser el mismo que el original añadiendo la coletilla sort, por ejemplo palabras_sort.txt . Suponemos que cada palabra ocupa una línea.
+
+2. Escribe un programa que guarde en un fichero el contenido de otros dos ficheros, de tal forma que en el fichero resultante aparezcan las líneas de los primeros dos ficheros mezcladas, es decir, la primera línea será del primer fichero, la segunda será del segundo fichero, la tercera será la siguiente del primer fichero, etc.
+
+Los nombres de los dos ficheros origen y el nombre del fichero destino se deben pasar como argumentos en la línea de comandos.
+
+Hay que tener en cuenta que los ficheros de donde se van cogiendo las líneas pueden tener tamaños diferentes.
+
+3. Realiza un programa que diga cuántas ocurrencias de una palabra hay en un fichero. Tanto el nombre del fichero como la palabra se deben pasar como argumentos en la línea de comandos.
+
+4. Escribe un programa capaz de quitar los comentarios de un programa de Java.
+
+Se utilizaría de la siguiente manera:
+
+python quita-comentarios.py <PROGRAMA_ORIGINAL> <PROGRAMA_LIMPIO>
+
+Por ejemplo:
+
+python quita-comentarios.py Holav1.java Holav2.java
+
+crea un fichero con nombre Holav2.java que contiene el código de Holav1.java pero sin los comentarios.
+
+P.D.- Usa excepciones para controlar el manejo de ficheros y en caso de no poder operar dar el mensaje de error correspondiente.

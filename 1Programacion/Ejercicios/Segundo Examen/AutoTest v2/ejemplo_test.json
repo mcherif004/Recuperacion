@@ -1,0 +1,32 @@
+[
+  {
+    "name":"Concepto de clase",
+    "statement":"Describe qué significa el concepto de clase\nElige una de las siguientes opciones...",
+    "options":[["Es un array",-0.4],["Una variable",-0.4],["Un paradigma",-0.4],["Plantilla de objetos",1]],
+    "points":1
+  },
+  {
+    "name":"Pregunta 2",
+    "statement":"Texto de la pregunta 2\nElige una de las siguientes opciones...",
+    "options":[["Opción 1",-0.25],["Opción 2",1],["Opción 3",-0.4],["Opción 4",-0.3]],
+    "points":1
+  },
+  {
+    "name":"Pregunta 3",
+    "statement":"Texto de la pregunta 3\nElige una de las siguientes opciones...",
+    "options":[["Opción 1",-0.25],["Opción 2",1],["Opción 3",-0.4],["Opción 4",-0.3]],
+    "points":1
+  },
+  {
+    "name":"Pregunta 4",
+    "statement":"Texto de la pregunta 4\nElige una de las siguientes opciones...",
+    "options":[["Opción 1",-0.25],["Opción 2",1],["Opción 3",-0.4],["Opción 4",-0.3]],
+    "points":1
+  },
+  {
+    "name":"Pregunta 5",
+    "statement":"Texto de la pregunta 5\nElige una de las siguientes opciones...",
+    "options":[["Opción 1",-0.25],["Opción 2",1],["Opción 3",-0.4],["Opción 4",-0.3]],
+    "points":1
+  }
+]

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>
+    <question name="Pregunta1" base_score="1">
+        <statement>
+            Este es el enunciado de la pregunta 1 (la correcta es la 1, el resto quita 0.25).
+            Podría continuar escribiendo...
+        </statement>
+        <options>
+            <option weight="1">
+                Respuesta 1
+            </option>
+            <option weight="-0.25">
+                Respuesta 2
+            </option>
+            <option weight="-0.25">
+                Respuesta 3
+            </option>
+            <option weight="-0.25">
+                Respuesta 4
+            </option>
+        </options>
+    </question>
+    <question name="Pregunta2" base_score="1">
+        <statement>
+            Este es el enunciado de la pregunta 2 (la correcta es la 2, el resto quita 0.25).
+        </statement>
+        <options>
+            <option weight="-0.25">
+                Respuesta 1
+            </option>
+            <option weight="1">
+                Respuesta 2
+            </option>
+            <option weight="-0.25">
+                Respuesta 3
+            </option>
+            <option weight="-0.25">
+                Respuesta 4
+            </option>
+        </options>
+    </question>
+    <question name="Pregunta3" base_score="1">
+        <statement>
+            Este es el enunciado de la pregunta 3 (la correcta es la 3, el resto quita 0.25).
+        </statement>
+        <options>
+            <option weight="-0.25">
+                Respuesta 1
+            </option>
+            <option weight="-0.25">
+                Respuesta 2
+            </option>
+            <option weight="1">
+                Respuesta 3
+            </option>
+            <option weight="-0.25">
+                Respuesta 4
+            </option>
+        </options>
+    </question>
+    <question name="Pregunta4" base_score="1">
+        <statement>
+            Este es el enunciado de la pregunta 4 (la correcta es la 4, el resto quita 0.25).
+        </statement>
+        <options>
+            <option weight="-0.25">
+                Respuesta 1
+            </option>
+            <option weight="-0.25">
+                Respuesta 2
+            </option>
+            <option weight="-0.25">
+                Respuesta 3
+            </option>
+            <option weight="1">
+                Respuesta 4
+            </option>
+        </options>
+    </question>
+    <question name="Pregunta5" base_score="1">
+        <statement>
+            Este es el enunciado de la pregunta 5 (la correcta es la 1, el resto quita 0.25).
+        </statement>
+        <options>
+            <option weight="1">
+                Respuesta 1
+            </option>
+            <option weight="-0.25">
+                Respuesta 2
+            </option>
+            <option weight="-0.25">
+                Respuesta 3
+            </option>
+            <option weight="-0.25">
+                Respuesta 4
+            </option>
+        </options>
+    </question>
+</test>
