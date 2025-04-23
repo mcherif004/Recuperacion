@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutería IES Gran Capitán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #background-selection {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .background-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #background1 {
+            background-image: url('./fondo1.jpg');
+        }
+
+        #background2 {
+            background-image: url('./fondo2.jpg');
+        }
+
+        #background-none {
+            background-color: #D3D3D3;
+        }
+
+        #items-list {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #summary {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FRUTERÍA IES GRAN CAPITÁN</h1>
+    </header>
+    <main>
+        <!-- Formulario de configuración -->
+        <section id="config-section">
+            <h2>Datos de Configuración</h2>
+            <form id="config-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Introduce tu nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" placeholder="Introduce tu correo" required>
+
+                <h2>Configuración de Fondo</h2>
+                <div id="background-selection">
+                    <button type="button" id="background1" class="background-button" title="Fondo 1"></button>
+                    <button type="button" id="background2" class="background-button" title="Fondo 2"></button>
+                    <button type="button" id="background-none" class="background-button" title="Sin Fondo"></button>
+                </div>
+
+                <button type="submit">Guardar Configuración</button>
+            </form>
+        </section>
+
+        <!-- Lista de compras -->
+        <section id="shopping-section">
+            <h2>Lista de Compras</h2>
+            <div id="items-list">
+                <label><input type="checkbox" value="Manzanas"> Manzanas</label>
+                <label><input type="checkbox" value="Plátanos"> Plátanos</label>
+                <label><input type="checkbox" value="Leche"> Leche</label>
+                <label><input type="checkbox" value="Huevos"> Huevos</label>
+                <label><input type="checkbox" value="Pan"> Pan</label>
+            </div>
+            <button id="save-items">Guardar lista de la compra</button>
+        </section>
+
+        <!-- Resumen -->
+        <section id="summary">
+            <h2>Resumen</h2>
+            <p id="user-data"></p>
+            <p id="shopping-list"></p>
+            <button id="logout">Cerrar Sesión</button>
+        </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
