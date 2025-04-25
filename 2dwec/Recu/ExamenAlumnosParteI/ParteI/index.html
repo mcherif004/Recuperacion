@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aventura de Super Mario</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+
+    <h1>Parte I - Aventura de Super Mario</h1>
+
+    <form id="aventuraForm">
+        <label>🌍 Nombre del Mundo (mínimo 5 caracteres):</label>
+        <input type="text" id="nombreMundo"><br><br>
+        
+        <fieldset>
+            <legend>👑 Selecciona al menos un héroe:</legend>
+            <div class="personajes">
+                <div class="personaje">
+                    <img src="./img/mario.webp" alt="Mario">
+                    <input type="checkbox" name="heroe" value="Mario"> Mario
+                </div>
+                <div class="personaje">
+                    <img src="./img/luigi.webp" alt="Luigi">
+                    <input type="checkbox" name="heroe" value="Luigi"> Luigi
+                </div>
+                <div class="personaje">
+                    <img src="./img/peach.webp" alt="Peach">
+                    <input type="checkbox" name="heroe" value="Peach"> Peach
+                </div>
+                <div class="personaje">
+                    <img src="./img/toad.png" alt="Toad">
+                    <input type="checkbox" name="heroe" value="Toad"> Toad
+                </div>
+            </div>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>🔥 Selecciona un enemigo:</legend>
+            <div class="personajes">
+                <div class="personaje">
+                    <img src="./img/bowser.webp" alt="Bowser">
+                    <input type="radio" name="enemigo" value="Bowser"> Bowser
+                </div>
+                <div class="personaje">
+                    <img src="./img/goomba.webp" alt="Goomba">
+                    <input type="radio" name="enemigo" value="Goomba"> Goomba
+                </div>
+            </div>
+        </fieldset><br>
+
+        <div id="mensajeError" class="error-mensaje"></div>
+        <button type="submit"> Iniciar Aventura</button>
+
+    </form>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
