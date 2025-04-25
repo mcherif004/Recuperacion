@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: url("img/fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+
+h1 {
+    color: #FFD700;
+    text-shadow: 3px 3px 0px #000;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+fieldset {
+    border: 2px solid #FFD700;
+    padding: 15px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border-radius: 10px;
+}
+
+legend {
+    background: #FFD700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.personajes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.personaje {
+    text-align: center;
+}
+
+.personaje img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: block;
+    object-fit: contain;
+}
+
+.personaje input {
+    display: block;
+    margin-top: 5px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 0px black;
+}
+
+button:hover {
+    background: #FF4500;
+}
+.error-mensaje {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
