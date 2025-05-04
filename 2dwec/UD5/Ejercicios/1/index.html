@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing en el DOM</title>
+    <style>
+        .destacado{
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Tareas pendientes</h1>
+        <ul id="lista-pendientes">
+            <li class="tarea">Comprar comida</li>
+            <li class="tarea">Pagar facturas</li>
+            <li class="tarea">Llamar al médico</li>
+        </ul>
+        <button id="resaltar-primera">Resaltar/noResaltar primera tarea</button>
+        <button id="eliminar-ultima">Eliminar última tarea</button>
+        <button id="agregar-tarea">Agregar nueva tarea</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

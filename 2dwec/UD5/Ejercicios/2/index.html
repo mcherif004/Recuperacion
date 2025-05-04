@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas Avanzada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+        .destacado {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .acciones button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tareas Interactiva</h1>
+    <input type="text" id="nueva-tarea" placeholder="Escribe una nueva tarea">
+    <button id="agregar-tarea">Agregar Tarea</button>
+    <ul id="lista-tareas">
+        <!-- Las tareas se agregarán dinámicamente aquí -->
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>

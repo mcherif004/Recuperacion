@@ -1,0 +1,16 @@
+SESIONES:
+Sobre el mismo ejercicio, solo se puede ver las peliculas si estas logeado, si no estoy logeado sale el login
+La sesion se utilizara para ir de página a página, nos permiten conservar el historial de navegación
+Desde el punto de vista de la vista
+VISTA:
+cuando entras sale el login, con usuario y contraseña y enviar -> login.php
+como soy usuario autentificado, con ADMIN ADMIN y con eso sale el menu de navegación y salir
+
+La sesion se crea al principio del index
+session start
+si no existe $_SESSION['auth']
+crea $_SESSION['auth'] = false
+si es falso, manda al login
+
+si usuario es admin y contraseña admin
+$_SESSION['auth'] = true y manda al index
