@@ -1,0 +1,15 @@
+Enunciado:
+Crea una aplicación en PHP que almacene en un array un listado de películas organizadas por género, con menú de acceso y preferencias.
+
+Requisitos:
+
+Definir un array para almacenar películas y género. Guardaremos imagen de la carátula de la película y año de la misma.
+
+Crear una aplicación con un menú para acceder a las películas por género.
+
+Permitir al usuario marcar preferencias de género.
+
+La página de inicio muestra al usuario las películas de su preferencia. Si el usuario no tiene preferencias, se mostrarán las películas del año actual.
+
+Salida esperada:
+Aplicación HTML con menú de navegación y opción de preferencias de usuario.
