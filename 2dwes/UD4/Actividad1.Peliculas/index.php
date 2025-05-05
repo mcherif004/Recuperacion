@@ -2,7 +2,7 @@
 include 'config.php';
 $anyo_actual = date('Y');
 
-// 1. Process POST request with validation
+// 1. POST request
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $genero = $_POST['genero'] ?? null;
     if($genero && array_key_exists($genero, $peliculasPorGenero)) {
@@ -15,7 +15,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// 2. Determine movies to show (GET param > Session > Current year)
 $genero_actual = null;
 $peliculas = [];
 
