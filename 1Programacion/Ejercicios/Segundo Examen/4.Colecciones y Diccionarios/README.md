@@ -24,6 +24,7 @@ La capital de Alemania es Berlín
 Escribe el nombre de un país y te diré su capital: Francia
 La capital de Francia es París
 Escribe el nombre de un país y te diré su capital: salir
+
 7. Una empresa de venta por internet de productos electrónicos nos ha encargado implementar un carrito de la compra. Crea la clase ShoppingCart. Al carrito se le pueden ir agregando elementos que se guardarán en una lista, por tanto, deberás crear la clase Element. Cada elemento del carrito deberá contener el nombre del producto, su precio y la cantidad (número de unidades de dicho producto). A continuación se muestra tanto el contenido del programa principal como la salida que debe mostrar el programa. Los métodos a implementar se pueden deducir del programa principal.
 
 Contenido del programa principal:
@@ -58,6 +59,7 @@ Samsung Galaxy Tab PVP: 199,00 Unidades: 3 Subtotal: 597,00
 Tarjeta SD 64Gb PVP: 19,95 Unidades: 1 Subtotal: 19,95
 Ahora hay 4 productos en la cesta.
 El total asciende a 1105,85 euros
+
 8. Mejora el programa anterior (en otro diferente) de tal forma que al intentar agregar un elemento al carrito, se compruebe si ya existe el producto y, en tal caso, se incremente el número de unidades sin añadir un nuevo elemento. Observa que en el programa anterior, se repetía el producto “Tarjeta SD 64Gb” dos veces en el carrito. En esta nueva versión ya no sucede esto, sino que se incrementa el número de unidades del producto que se agrega. El contenido del programa principal es idéntico al ejercicio anterior.
 
 Salida:
@@ -76,6 +78,7 @@ Canon EOS 2000D PVP: 449,00 Unidades: 1 Subtotal: 449,00
 Samsung Galaxy Tab PVP: 199,00 Unidades: 3 Subtotal: 597,00
 Ahora hay 3 productos en la cesta.
 El total asciende a 1105,85 euros
+
 9. Amplía el ejercicio de la tanda anterior que implementaba cuentas corrientes de un banco de tal forma que cada cuenta lleve un registro de todos los movimientos realizados: ingresos, cargos y transferencias (tanto enviadas como recibidas).
 
 Contenido del programa principal:
