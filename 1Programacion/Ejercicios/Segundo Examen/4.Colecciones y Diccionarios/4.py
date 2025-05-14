@@ -42,7 +42,7 @@ aciertos = 0
 errores = 0
 
 # Preguntar al usuario la traducción
-for palabra in diccionario:
+for palabra in palabras_aleatorias:
     respuesta = input(f"¿Cómo se traduce '{palabra}' al inglés? ").strip().lower()
     if respuesta == diccionario[palabra]:
         print("¡Correcto!")
