@@ -7,9 +7,9 @@
 | **Requisito**               | **Detalle**                                                                 |
 |------------------------------|-----------------------------------------------------------------------------|
 | **Objetivo principal**       | Vender productos de fitness (suplementos, accesorios, ropa) online.        |
-| **Funcionalidades clave**    | - Carrito de compra y checkout seguro.<br>- Blog educativo.<br>- Diseño móvil-first. |
-| **Diseño**                   | - Paleta corporativa: naranja (`#FF5A1F`) y gris oscuro (`#2D3748`).<br>- Imágenes HD y optimizadas. |
-| **Experiencia de usuario**   | - Navegación rápida e intuitiva (tiempo de carga < 3 segundos).            |
+| **Funcionalidades clave**    | - Carrito de compra.<br>- Blog educativo.<br>- Diseño móvil-first. |
+| **Diseño**                   | - Paleta corporativa: naranja (`#FF5A1F`) y gris oscuro (`#2D3748`).<br>- Imágenes HD y optimizadas (webp). |
+| **Experiencia de usuario**   | - Navegación rápida e intuitiva.            |
 
 ---
 
@@ -24,7 +24,7 @@
 ## 3. Funcionalidades Básicas (MVP)  
 | **Elemento**                 | **Descripción**                                                            |
 |------------------------------|-----------------------------------------------------------------------------|
-| **Tienda Online**            | - WooCommerce con categorías: Nutrición, Accesorios, Ropa.<br>- Checkout de 1 página. |
+| **Tienda Online**            | - WooCommerce con categorías: Nutrición, Accesorios, Ropa.|
 | **Blog**                     | - Artículos cortos (nutrición/rutinas).<br>- Integración con redes sociales. |
 | **Contacto**                 | - Formulario simple + WhatsApp Business integrado.                         |
 | **Optimización técnica**     | - SSL gratuito (Let's Encrypt).<br>- Compresión de imágenes automática.    |
