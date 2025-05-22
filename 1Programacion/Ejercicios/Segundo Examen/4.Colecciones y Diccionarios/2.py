@@ -28,7 +28,7 @@ baraja = []
 for palo in orden_palos:
     for numero in orden_numeros:
         carta = Card(numero, palo)
-        baraja.append(carta)
+        baraja.append(carta) 
 
 # Elegir 10 cartas únicas al azar
 cartas_seleccionadas = random.sample(baraja, 10)

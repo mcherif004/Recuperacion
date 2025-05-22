@@ -1,0 +1,41 @@
+<body>
+
+    <h1>CEREMONIA DE SELECCIÓN</h1>
+
+    <!-- Formulario de inscripción -->
+    <div id="formulario">
+        <h2>Bienvenido a Hogwarts</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+    
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha">
+    
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni">
+    
+        <button id="enviar">Enviar</button>
+    </div>
+    
+    <!--Sombrero y asignación de casa -->
+    <div id="imagenes" style="display: none;">
+        <h2>Mucha suerte!</h2>
+        <div id="imagen">
+            <img id="imagenSombrero" src="imagenes/sombrero.gif" alt="Sombrero seleccionador">
+        </div>
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- Ficha del alumno -->
+    <div id="fichaAlumno" style="display: none;">
+        <h2>Ficha del Alumno</h2>
+        <p class="datoAlumno" id="nombreAlumno">Nombre:</p>
+        <p class="datoAlumno" id="fechaAlumno">Fecha de Nacimiento:</p>
+        <p class="datoAlumno" id="dniAlumno">DNI:</p>
+        <p class="datoAlumno" id="casaAlumno">Casa:</p>
+        <img id="escudo" class="escudoAlumno" src="" alt="Escudo de la casa">
+        <br>
+        <button id="cerrarSesion" class="boton" style="display: none;">Cerrar Sesión</button>
+    </div>
+
+</body>

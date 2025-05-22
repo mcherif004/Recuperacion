@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Naves Galácticas</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Vincula el archivo CSS externo -->
+    <script type="module" src="./js/index.js" defer></script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Naves Galácticas</h1>
+        <form id="registroNave">
+            <label for="nombreNave">Nombre de la Nave</label>
+            <input type="text" id="nombreNave" placeholder="Introduce el nombre de la nave">
+
+            <fieldset>
+                <legend>Selecciona Personajes</legend>
+                <div class="grid" id="personajesGrid">
+                    <div>
+                        <img src="./images/luke.jpg" alt="Luke Skywalker">
+                        <label><input type="checkbox" id="luke" value="Luke Skywalker"> Luke</label>
+                    </div>
+                    <div>
+                        <img src="./images/leia.jpg" alt="Leia Organa">
+                        <label><input type="checkbox" id="leia" value="Leia Organa"> Leia</label>
+                    </div>
+                    <div>
+                        <img src="./images/han.jpg" alt="Han Solo">
+                        <label><input type="checkbox" id="han" value="Han Solo"> Han</label>
+                    </div>
+                    <div>
+                        <img src="./images/chewacca.jpg" alt="chewacca">
+                        <label><input type="checkbox" id="chewacca" value="Chewacca"> Chewacca</label>
+                    </div>
+                    <div>
+                        <img src="./images/yoda.jpg" alt="Yoda">
+                        <label><input type="checkbox" id="yoda" value="Yoda"> Yoda</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona un Robot</legend>
+                <div class="robot-group" id="robotsGrid">
+                    <div>
+                        <img src="./images/r2d2.jpg" alt="R2-D2">
+                        <label><input type="radio" name="robot" id="r2d2" value="R2-D2"> R2-D2</label>
+                    </div>
+                    <div>
+                        <img src="./images/c3po.jpg" alt="C-3PO">
+                        <label><input type="radio" name="robot" id="c3po" value="C-3PO"> C-3Po</label>
+                    </div>
+                    <div>
+                        <img src="./images/bb8.jpg" alt="BB-8">
+                        <label><input type="radio" name="robot" id="bb8" value="BB-8"> BB-8</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="button" id="lanzarNave">Lanzar Nave</button>
+            <div id="mensajeError"></div>
+        </form>
+    </div>
+</body>
+</html>

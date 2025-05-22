@@ -1,0 +1,168 @@
+/* Importar la fuente antigua */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital,wght@0,400;1,400&display=swap');
+
+body {
+    font-family: 'IM Fell English', serif;
+    text-align: center;
+    background: url('../imagenes/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* La página ocupa toda la altura disponible */
+    margin: 0;
+}
+
+/*   Estilo para el título */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+/*   Contenedor de formularios y resultados */
+#formulario, #resultado, #fichaAlumno {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 500px; /* Ajustado para que tenga el mismo ancho que la carta */
+    max-width: 90%;
+}
+
+/*   Estilo para los datos del alumno */
+.datoAlumno {
+    font-size: 24px;
+    margin: 8px 0;
+    font-family: 'IM Fell English', serif;
+    font-weight: bold;
+}
+
+/*   Ajuste del escudo para eliminar bordes blancos */
+.escudoAlumno {
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    background: transparent !important; /* Asegura que no tenga fondo */
+    border: none !important; /* Elimina cualquier borde */
+    box-shadow: none !important; /* Elimina cualquier sombra que pueda estar causando el efecto */
+}
+
+/*   Si el escudo tiene fondo blanco en la imagen original, lo hacemos transparente */
+.escudoAlumno img {
+    mix-blend-mode: multiply; /* Intenta eliminar el fondo blanco de la imagen */
+}
+
+/*   Centrar los divs en la pantalla */
+#formulario, #resultado {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*   Mejoras en el formulario */
+#formulario label {
+    display: block;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#formulario input {
+    width: 80%;  /* Reducido para que no ocupen el 100% del div */
+    padding: 8px;  /* Espaciado ajustado */
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;  /* Ligero ajuste en el tamaño del texto */
+    font-family: 'IM Fell English', serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra los inputs dentro del formulario */
+}
+
+#formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 26px;
+    font-family: 'IM Fell English', serif;
+    transition: background 0.3s;
+}
+
+#formulario button:hover {
+    background-color: red;
+}
+
+/*   Contenedor del mensaje: Asegura que el texto no se corte */
+#mensaje {
+    max-width: 90%;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+}
+
+/*   Contador de espera */
+#contador {
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+
+/*   Ficha del alumno */
+.fichaAlumno {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 500px; /* Asegura que coincida con otros contenedores */
+    text-align: center; /* Centra todo el contenido dentro de la ficha */
+    font-size: 18px;
+    font-family: 'IM Fell English', serif;
+}
+
+/*   Botón de cerrar sesión */
+.boton {
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.562);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'IM Fell English', serif;
+    font-size: 20px;
+    transition: background 0.3s;
+    display: block; /* Asegura que el botón ocupe su espacio */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto;
+}
+
+.boton:hover {
+    background-color: darkred;
+}
+
+/*   Imagen del escudo de la casa */
+#escudo {
+    width: 150px; /* Más grande */
+    display: none;
+}

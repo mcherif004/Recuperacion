@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'StarJedi';
+    src: url('./fonts/StarJedi.ttf') format('truetype');
+}
+
+body {
+    font-family: 'StarJedi', sans-serif;
+    background-image: url('./images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #feda4a;
+    font-size: 28px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px; 
+    margin-top: 5px; /* Espacio entre imagen y texto */
+    text-align: center; /* Asegura que el texto esté centrado debajo de la imagen */
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid div, .robot-group div {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid img, .robot-group img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* Imágenes circulares */
+    border: 2px solid #fff;
+    margin-bottom: 5px; /* Agrega espacio entre la imagen y el texto */
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.grid img:hover, .robot-group img:hover {
+    transform: scale(1.1);
+    border-color: #feda4a;
+}
+
+.grid img.selected, .robot-group img.selected {
+    border-color: #feda4a;
+}
+
+.robot-group {
+    display: flex; /* Alinea en fila horizontal */
+    flex-wrap: nowrap; /* Evita que los robots se ajusten a otra línea */
+    gap: 15px; /* Espaciado entre robots */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #feda4a;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d4b125;
+    transform: scale(1.05);
+}
+
+#output {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    color: #feda4a;
+}
