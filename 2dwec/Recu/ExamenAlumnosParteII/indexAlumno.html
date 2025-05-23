@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de los Topos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <!--
+    ----------------------------------------------------------------
+    A CONTINUACIÓN SE MUESTRA EL HTML QUE DEBE CREAR EL JS DE FORMA
+    DINÁMICA. NO LO DEJES EN EL INDEX, SÓLO SIRVE DE REFERENCIA PARA
+    EL ALUMNO.
+    ----------------------------------------------------------------
+      -->
+    <!-- FORMULARIO INICIAL -->
+    <form id="formulario">
+      <label>
+        Nombre:
+        <input type="text" id="nombre">
+      </label><br>
+      
+      <label>
+        Fecha de Nacimiento:
+        <input type="date" id="fecha">
+      </label><br>
+      
+      Color de fondo:<br>
+      <label><input type="radio" name="color" value="Lightblue" checked> Lightblue</label><br>
+      <label><input type="radio" name="color" value="Lightgreen"> Lightgreen</label><br>
+      <label><input type="radio" name="color" value="Lightyellow"> Lightyellow</label><br>
+      <label><input type="radio" name="color" value="Lightpink"> Lightpink</label><br>
+      
+      <button type="submit">Enviar</button>
+    </form>
+    
+    <!-- PANTALLA DE JUEGO -->
+    <h2>Jugador: <span id="nombreJugador">[Nombre]</span> | Puntuación: <span id="puntos">0</span></h2>
+    <button id="btnCerrar">Cerrar sesión</button>
+    
+    <table id="tablaJuego">
+      <tr>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+      </tr>
+      <tr>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+      </tr>
+      <tr>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+        <td><img src="imagenes/agujero.png" width="100"></td>
+      </tr>
+    </table>
+
+
+  <!-- El alumno debe generar TODO lo anterior con JavaScript 
+  <script src="./js/index.js"></script>-->
+</body>
+</html>
