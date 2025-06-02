@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personajes de Bob Esponja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Personajes de Bob Esponja 🧽</h1>
+
+    <div class="full-width-container">
+        <div class="section">
+            <h2>Consultar Personaje (GET)</h2>
+            <div class="form-group">
+                <label for="nombrePersonaje">Nombre:</label>
+                <select id="nombrePersonaje">
+                    <option value="">Cargando personajes...</option>
+                </select>
+            </div>
+            
+            
+            <button id="consultar">Consultar</button>
+            <div id="resultado"></div>
+        </div>
+
+        <div class="section">
+            <h2>Crear Personaje (POST)</h2>
+            <div class="form-columns">
+                <div class="form-group">
+                    <label for="nuevoNombre">Nombre:</label>
+                    <input type="text" id="nuevoNombre"/>
+                </div>
+                <div class="form-group">
+                    <label for="nuevaOcupacion">Ocupación:</label>
+                    <input type="text" id="nuevaOcupacion"/>
+                </div>
+                <div class="form-group">
+                    <label for="nuevoTipo">Tipo:</label>
+                    <input type="text" id="nuevoTipo"/>
+                </div>
+                <div class="form-group">
+                    <label for="nuevaPuntuacion">Puntuación:</label>
+                    <input type="number" id="nuevaPuntuacion"/>
+                </div>
+                <div class="form-group">
+                    <label for="nuevaHabilidad">Habilidad Especial:</label>
+                    <input type="text" id="nuevaHabilidad"/>
+                </div>
+                <div class="form-group">
+                    <label for="nuevaResidencia">ID Residencia:</label>
+                    <input type="number" id="nuevaResidencia"/>
+                </div>
+            </div>
+            <button id="crear">Crear Personaje</button>
+            <div id="mensajePOST"></div>
+        </div>
+
+        <div class="section">
+            <h2>Actualizar Información Completa (PUT)</h2>
+            <div class="form-columns">
+                <div class="form-group">
+                    <label for="idPersonajePUT">ID:</label>
+                    <input type="number" id="idPersonajePUT"/>
+                </div>
+                <div class="form-group">
+                    <label for="nombrePUT">Nuevo Nombre:</label>
+                    <input type="text" id="nombrePUT"/>
+                </div>
+                <div class="form-group">
+                    <label for="ocupacionPUT">Nueva Ocupación:</label>
+                    <input type="text" id="ocupacionPUT"/>
+                </div>
+                <div class="form-group">
+                    <label for="tipoPUT">Nuevo Tipo:</label>
+                    <input type="text" id="tipoPUT"/>
+                </div>
+                <div class="form-group">
+                    <label for="puntuacionPUT">Nueva Puntuación:</label>
+                    <input type="number" id="puntuacionPUT"/>
+                </div>
+                <div class="form-group">
+                    <label for="habilidadPUT">Nueva Habilidad:</label>
+                    <input type="text" id="habilidadPUT"/>
+                </div>
+                <div class="form-group">
+                    <label for="residenciaPUT">Nueva Residencia:</label>
+                    <input type="number" id="residenciaPUT"/>
+                </div>
+            </div>
+            <button id="actualizarPUT">Actualizar</button>
+            <div id="mensajePUT"></div>
+        </div>
+        
+
+        <div class="section">
+            <h2>Actualizar Puntuación (PATCH)</h2>
+            <div class="form-group">
+                <label for="idPersonajePATCH">ID:</label>
+                <input type="number" id="idPersonajePATCH"/>
+                <label for="puntuacionPATCH">Nueva Puntuación:</label>
+                <input type="number" id="puntuacionPATCH"/>
+            </div>
+            
+            <button id="actualizarPATCH">Actualizar Puntuación</button>
+            <div id="mensajePATCH"></div>
+        </div>
+
+        <div class="section">
+            <h2>Eliminar Personaje (DELETE)</h2>
+            <div class="form-group">
+                <label for="idPersonajeDELETE">ID:</label>
+                <input type="number" id="idPersonajeDELETE"/>
+            </div>
+            
+            <button id="eliminar">Eliminar</button>
+            <div id="mensajeDELETE"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

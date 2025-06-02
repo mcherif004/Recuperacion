@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.full-width-container {
+    width: 30%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 223, 88, 0.8);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+.form-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 40%; /* Reduce el ancho de cada grupo para que ocupen menos */
+    margin-bottom: 10px; /* Reduce la separación vertical */
+}
+
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #222;
+}
+
+.form-group input {
+    width: 60%; 
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+}
+.form-group select {
+    width: 60%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    background-color: #fff;
+    color: #222;
+    cursor: pointer;
+    /*appearance: none; Oculta la flecha predeterminada en algunos navegadores */
+}
+
+
+button {
+    font-size: 1.2em;
+    padding: 10px;
+    background: yellow;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: orange;
+    transform: scale(1.05);
+}
+
+div {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
