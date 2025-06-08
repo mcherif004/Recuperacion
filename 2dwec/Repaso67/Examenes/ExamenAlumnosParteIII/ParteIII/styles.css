@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 🔹 Asegurar que la fuente se aplique en todo */
+* {
+    font-family: 'Press Start 2P', cursive !important; /* 🚀 Forzar la fuente */
+}
+
+/* 🔹 Fondo de la página */
+body {
+    background: url("img/fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* 🔹 Títulos */
+h1, h2, h3 {
+    color: #FFD700;
+    text-shadow: 3px 3px 0px #000;
+}
+
+/* 🔹 Estilo de los selects */
+select {
+    background-color: #333;
+    color: #FFD700;
+    border: 3px solid #FFD700;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* 🔹 Botones */
+button {
+    background: #FF0000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px black;
+}
+
+button:hover {
+    background: #FF4500;
+}

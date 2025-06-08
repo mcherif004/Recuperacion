@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+
+<body class="ancestors">body (tatarabuelo)
+    <div style="width:500px;">div (bisabuelo)
+        <ul>ul (abuelo)
+            <li>li (padre)
+                <span>span</span>
+                 <i class="cur">cursiva</i> 
+                 <i >cursiva 2</i>
+                 <b>negrita</b>
+                 <u>subrayado</u>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

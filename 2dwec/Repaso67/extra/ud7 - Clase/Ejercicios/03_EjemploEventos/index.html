@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos GC</title>
+    <link rel="stylesheet" href="./librerias/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./librerias/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./librerias/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <legend class="text-center header">Facturación Eventos Gran Capitán</legend>
+        <div class="col-md-16">
+
+            <div class="panel-heading">
+                <form class="form-datos" autocomplete="off">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                    class="fas fa-user-cog"></i></span>
+                                <input type="text" class="form-control" placeholder="Código cliente" id="cdgCli" name="cdgCli">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                    class="fas fa-signature"></i></span>
+                                <input type="text" class="form-control" placeholder="Nombre del cliente" id="nameCli" name="nameCli" disabled>
+                            </div>
+                           
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                    class="fas fa-clock"></i></span>
+                                <input type="date" class="form-control" placeholder="Fecha Facturación" id="fecha" name="fecha">
+                            </div>
+                           
+                        </div>
+                    </div> <!-- row -->
+                    <div class="row">
+                        <div class="col-md-4">
+                           
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                        class="fas fa-theater-masks"></i></span>
+                                        <select id="categorias" name="catg" class="form-control">
+                                            <option value="">Seleccione categorias</option>
+                                        </select>
+                                </div>
+                                    
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                    class="fas fa-theater-masks"></i></span>
+                                    <select id="eventos" name="eventos" class="form-control">
+                                        <option value="">Seleccione eventos</option>
+                                    </select>
+                                    
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-ticket-alt"></i></span>
+                                <input class="form-control" id="entradas" name="entradas" type="text" placeholder="nº entradas">
+                                <div>
+                                    <span class="errorAforo"></span>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                    </div> <!-- row -->
+                    
+                    
+                    <hr>
+                    <span id="error"></span>
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary btn-lg anadir">Añadir Evento</button>
+                    </div>
+                </form>
+                <hr>
+                <!-- *************************** -->
+                    <!-- <div class="row">
+                        <div><p class="text-center header">Aplicar descuento</p></div>
+                        
+                        <div class="col-md-4">
+                            <div><p class="alert alert-info">Arrastre el descuento</p></div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                     
+                                <label class="arrastrar btn btn-warning">5%</label>
+                                <label class="arrastrar btn btn-success">10%</label>
+                                <label class="arrastrar btn btn-danger">15%</label>
+                                <label class="arrastrar btn btn-outline-info">Sin descuento</label>
+                             
+                            </div>        
+                            
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div><p class="alert alert-warning">Suelte el descuento</p></div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                     
+                                <label class="soltar btn btn-outline-info">Sin descuento</label>
+                                
+                             
+                            </div>        
+                            
+                        </div>
+                       
+                        
+                   
+                    </div>  -->
+                    <!-- ***************************************** -->
+            </div> <!-- panel heading -->
+            <hr>
+            <div class="panel-body">
+                <h3 class="panel-title">Compra de eventos</h3>
+
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">entradas</th>
+                            <th scope="col">precio Unitario</th>
+                           <!--  <th scope="col">Dto</th>
+                            <th scope="col">Precio Unitario Dto</th> -->
+                            <th scope="col">importe</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div> <!-- panel body -->
+            <div class="panel-footer footer">
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="type" class="btn btn-primary btn-lg grabar">Grabar</button>
+                    </div>
+                </div>
+            </div>
+
+    </div> <!-- container -->
+
+   
+
+</body>
+<script src="./librerias/jquery-3.6.1.min.js"></script>
+<script src="./librerias/bootstrap/js/bootstrap.min.js"></script>
+<script src="./librerias/sweetalert2.all.min.js"></script>
+<script src="./librerias/fontawesome/js/all.min.js"></script>
+<script src="./librerias//jquery-ui/jquery-ui.min.js"></script>
+<script src="./librerias/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="./librerias/jquery-validation/dist/localization/messages_es.min.js"></script>
+<script src="./librerias/axios/axios.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

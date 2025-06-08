@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta y actualización de alumnos</title>
+</head>
+<body>
+    <h2>Consultar Alumno (GET)</h2>
+    <label for="nombreAlumno">Nombre:</label>
+    <input type="text" id="nombreAlumno"/>
+    <button id="consultar">Consultar</button>
+    <div id="resultado"></div>
+    <div id="direccion"></div>
+
+    <h2>Crear Alumno (POST)</h2>
+    <label for="nuevoNombre">Nombre:</label>
+    <input type="text" id="nuevoNombre"/>
+    <label for="nuevaPuntuacion">Puntuación:</label>
+    <input type="number" id="nuevaPuntuacion"/>
+    <button id="crear">Crear Alumno</button>
+    <div id="mensajePOST"></div>
+
+    <h2>Actualizar Información Completa (PUT)</h2>
+    <label for="idAlumnoPUT">ID Alumno:</label>
+    <input type="number" id="idAlumnoPUT"/>
+    <label for="nombrePUT">Nuevo Nombre:</label>
+    <input type="text" id="nombrePUT"/>
+    <label for="puntuacionPUT">Nueva Puntuación:</label>
+    <input type="number" id="puntuacionPUT"/>
+    <button id="actualizarPUT">Actualizar Alumno</button>
+    <div id="mensajePUT"></div>
+
+    <h2>Actualizar Puntuación (PATCH)</h2>
+    <label for="idAlumnoPATCH">ID Alumno:</label>
+    <input type="number" id="idAlumnoPATCH"/>
+    <label for="puntuacionPATCH">Nueva Puntuación:</label>
+    <input type="number" id="puntuacionPATCH"/>
+    <button id="actualizarPATCH">Actualizar Puntuación</button>
+    <div id="mensajePATCH"></div>
+
+    <h2>Eliminar Alumno (DELETE)</h2>
+    <label for="idAlumnoDELETE">ID Alumno:</label>
+    <input type="number" id="idAlumnoDELETE"/>
+    <button id="eliminar">Eliminar Alumno</button>
+    <div id="mensajeDELETE"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

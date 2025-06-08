@@ -1,0 +1,17 @@
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+em.error, .errorAforo {
+    color: red;
+}
+.errorAforo{
+    font-size:12px;
+}
+
+.footer {
+    width: 25%;
+    float: right;
+   }

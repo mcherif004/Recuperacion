@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Torneo Street Fighter - Pares o Nones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Torneo Street Fighter - Pares o Nones</h1>
+
+    <section id="seleccion">
+        <label for="pais">Selecciona un país:</label>
+        <select id="pais">
+            <option value="">-- Elige un país --</option>
+        </select>
+
+        <label for="personaje">Selecciona tu luchador:</label>
+        <select id="personaje" disabled>
+            <option value="">-- Elige personaje --</option>
+        </select>
+
+        <button id="comenzarCombate" disabled>Comenzar Combate</button>
+    </section>
+
+    <section id="combate" style="display:none;">
+        <div id="luchadores">
+            <div id="jugador">
+                <h3>Jugador</h3>
+                <img id="imgJugador" src="" alt="">
+                <p id="nombreJugador"></p>
+            </div>
+            <div id="oponente">
+                <h3>Oponente</h3>
+                <img id="imgOponente" src="" alt="">
+                <p id="nombreOponente"></p>
+            </div>
+        </div>
+
+        <div id="ronda">
+            <div class="opciones-paridad">
+                <label><input type="radio" name="eleccion" value="pares"> Pares</label>
+                <label><input type="radio" name="eleccion" value="nones"> Nones</label>
+            </div>
+
+
+            <label for="numero">Elige un número del 1 al 5:</label>
+            <input type="number" id="numero" min="1" max="5">
+
+            <button id="jugarRonda">Jugar Ronda</button>
+        </div>
+
+        <div id="resultado">
+            <p id="resultadoTexto"></p>
+            <p id="marcador">Jugador: 0 | Oponente: 0</p>
+        </div>
+
+        <button id="revancha" style="display:none;">Revancha</button>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

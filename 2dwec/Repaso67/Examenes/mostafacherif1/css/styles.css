@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    color: white; /* Mantiene el texto en blanco para contrastar */
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgba(255, 140, 0, 0.8);
+}
+
+#resultado {
+    color: yellow;
+    text-shadow: 1px 1px 5px red;
+}
+/* Estilos para las imágenes de los personajes */
+.img-personaje {
+    width: 120px; /* Tamaño fijo */
+    height: 120px; /* Tamaño fijo */
+    object-fit: cover; /* Ajustar la imagen manteniendo proporciones, recortando si es necesario */
+    background-color: black; /* Fondo negro para imágenes con transparencia */
+    padding: 5px; /* Espaciado interno */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    display: block; /* Evita problemas de alineación en flexbox */
+    margin: 10px auto; /* Centrar la imagen */
+}
+
+/* Aplicar a las imágenes dentro del combate */
+#imgJugador1, #imgJugador2 {
+    width: 250px;  /* Tamaño uniforme */
+    height: 250px; /* Tamaño uniforme */
+    object-fit: contain; /* Ajustar imagen sin deformarla */
+    background-color: black; /* Fondo negro */
+    border: 2px solid white; /* Borde para resaltar */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado */
+}
+
+/* Ajustar el tamaño del botón de revancha */
+.btn-revancha {
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.btn-revancha:hover {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+    transform: scale(1.1);
+}
+
+/* Resaltar la fila al pasar el ratón */
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 193, 7, 0.2) !important;
+    transition: background 0.3s ease-in-out;
+}

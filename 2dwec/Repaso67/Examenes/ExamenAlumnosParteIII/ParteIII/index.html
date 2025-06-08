@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura de Super Mario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <h1>Parte III - Aventura de Super Mario</h1>
+
+    <form id="aventuraForm">
+        <label for="nombreMundo">🌍 Nombre del Mundo:</label>
+        <input type="text" id="nombreMundo" class="form-control mb-2">
+
+        <label for="tipoPersonaje">Tipo de personaje:</label>
+        <select id="tipoPersonaje" class="form-control mb-2">
+            <option value="" selected disabled>Escoge tipo de personaje</option>
+            <option value="heroe">👑 Héroe</option>
+            <option value="enemigo">🔥 Enemigo</option>
+        </select>
+
+        <label for="seleccionarPersonaje">🎮 Selecciona un personaje:</label>
+        <select id="seleccionarPersonaje" class="form-control mb-2">
+            <option value="" selected disabled>🎮 Escoge personaje</option>
+        </select>
+
+        <button type="button" id="agregarPersonaje" class="btn btn-success">➕ Añadir</button>
+
+        <h3 class="mt-4">Personajes Seleccionados</h3>
+        <div id="personajesSeleccionados" class="d-flex flex-wrap"></div>
+
+        <button type="submit" class="btn btn-primary mt-3">🚀 Iniciar Aventura</button>
+    </form>
+
+    <h2 class="mt-4">🏆 Aventuras Guardadas</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>🌍 Mundo</th>
+                <th>👑 Héroes</th>
+                <th>🔥 Enemigo</th>
+                <th>❌ Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tablaAventuras"></tbody>
+    </table>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
